@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECC Web Application</title>
+</head>
+<body>
+    <h1>Elliptic Curve Cryptography (ECC) Web Application</h1>
+    <button onclick="generateKeys()">Generate Keys</button>
+    <br><br>
+    <textarea id="message" placeholder="Enter your message here..."></textarea>
+    <br><br>
+    <button onclick="encryptMessage()">Encrypt Message</button>
+    <button onclick="decryptMessage()">Decrypt Message</button>
+    <button onclick="signMessage()">Sign Message</button>
+    <button onclick="verifySignature()">Verify Signature</button>
+    <br><br>
+    <div>
+        <h3>Output:</h3>
+        <pre id="output"></pre>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
